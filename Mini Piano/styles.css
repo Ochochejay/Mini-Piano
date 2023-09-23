@@ -1,0 +1,98 @@
+body{
+    background-color: #040D12;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5rem;
+    color: #5C8374;
+}
+
+.piano {
+   display: grid;
+   grid-template-rows: 100px 100px;
+   grid-template-columns: 56px 14px 7px 56px 7px 14px 56px 56px 14px 7px 49px 10.5px 10.5px 49px 7px 14px 56px 70px;
+   background-color: #000;
+   width: 553px;
+   height: 200px;
+}
+
+.white {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+.black {
+    background-color: #000;
+}
+
+/* Notes positioning */
+#c {
+  grid-area: 1 / 1 / -1 / 3;
+}
+
+#d {
+    grid-area: 1 / 3 / -1 / 6;
+} 
+
+#c-sharp {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+#e {
+    grid-area: 1 / 6 / -1 / 8;
+}
+
+#d-sharp {
+    grid-area: 1 / 5 / 2 / 7;
+}
+
+#f {
+    grid-area: 1 / 8 / -1 / 10;
+}
+
+#g {
+    grid-area: 1 / 10 / -1 / 13;
+}
+
+#f-sharp {
+    grid-area: 1 / 9 / 2 / 11;
+}
+
+#a {
+    grid-area: 1 / 13 / -1 / 16;
+}
+
+#g-sharp {
+    grid-area: 1 / 12 / 2 / 14;
+}
+
+#b {
+    grid-area: 1 / 16 / -1 / -2;
+}
+
+#a-sharp {
+    grid-area: 1 / 15 / 2 / 17;
+}
+
+#c-octave {
+    grid-area: 1 / -2 / -1 / -1;
+}
+
+button{
+    cursor: pointer;
+}
+
+.pressed {
+    box-shadow: 0 1px 2px 0 #DBEDF3;
+    opacity: 0.5;
+  }
